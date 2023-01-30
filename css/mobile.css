@@ -1,0 +1,24 @@
+@media (max-width: 900px) {
+    .contaienr_menu_principal  {
+        width: auto;
+        height: 377px;
+        background: url(https://i.pinimg.com/564x/b9/71/f2/b971f2f7bdbe38e0edbede6a80b6bc7b.jpg);
+        background-position: center;
+    }
+    .nav_links {
+        display: none;
+    }
+    .links_bar {
+        width: 50%;
+    }
+    .logo_menu {
+        font-size: 1rem;
+    }
+    .nav_bar_links {
+        padding-top: 15px;
+    }
+    .nav_img {
+        width: 150px;
+        padding-bottom: 15px;
+    }
+}
