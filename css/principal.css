@@ -1,0 +1,305 @@
+/*Menu_Principal*/
+.Menu_principal  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.lista_link {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+.li_link {
+    transition: all 0.5s;
+}
+.li_link :hover{
+    color: rgb(137, 43, 226);
+    border-bottom:1px solid rgb(255, 255, 255);
+
+}
+.logo_menu  {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+#btnmenu {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#btnmenu:hover {
+    color: rgb(137, 43, 226);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+} 
+#check {
+    display: none;
+}
+.links_bar {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(9, 9, 9), rgb(28, 29, 28));
+    top: -16px;
+    left: -1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    gap: 0.8rem;
+    list-style: none;
+}
+.idiomas {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+.idiomas:hover{
+    color: rgb(137, 43, 226);
+}
+#check:checked ~ .links_bar {
+    left: 0;
+}
+.nav_bar_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-top: 30px;
+}
+#icone_navbar {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+#icone_navbar:hover{
+    color: rgb(137, 43, 226);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.nav_img {
+    width: 150px;
+    padding-bottom: 30px;
+}
+/*container_apresentasao*/
+.container_apresentasao {
+    position: absolute;
+    animation: topup 3.5s;
+    left: 270px;
+}
+@keyframes topup {
+    from {top: 300px;}
+    to {top: 100px;}
+  }
+.texto_apresentaossao {
+    color: #fff;
+    height: 235px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+.texto_eu {
+    font-size: 3rem;
+}
+.redes_apresentasao {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+#icone_apresentaco {
+    color: #fff;
+    transition: all 0.5s;
+}
+#icone_apresentaco:hover{
+    color: blueviolet;
+}
+.btn_curriculo {
+    text-align: center;
+}
+.link_btn  {
+    font-size: 1.2rem;
+    width: 124px;
+    height: 63px;
+    border: 1px solid #fff;
+    padding: 6px 35px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.link_curriculo {
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.link_btn:hover {
+    background: #fff;
+} 
+.link_curriculo:hover {
+    color: #000;
+}
+/*container_sobremin*/
+.sobre_min_logo01 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: 110px;
+    justify-content: center;
+    align-items: center;
+}
+.sobre_min_logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.icone_logo {
+    height: 1px;
+    width: 170px;
+    background-color: blueviolet;
+}.estrela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    top: -4px;
+}
+.star {
+    background-color: blueviolet;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    transform: rotate(219deg);
+    margin-right: 1px;
+    animation: star 5s infinite;
+}
+@keyframes star{
+    0% {
+        transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+    }
+}
+.eu_sobre {
+    width: 200px;
+    border-radius: 100%;
+    border: 6px solid rgb(255, 255, 255);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    cursor: pointer;
+}
+.texto_sobre_min {
+    text-align: center;
+}
+.btn_sobrecurriculo {
+    border: 1px solid;
+    padding: 6px 35px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.downl_sobre {
+    color: #000;
+}
+.btn_sobrecurriculo:hover{
+    background: #000;
+}
+.downl_sobre:hover {
+    color: #fff;
+}
+/*Habilidades*/
+.front {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-direction: column;
+    color: #fff;
+}
+.texto_logo01{
+    color: #fff;
+}
+.texto_habilidades {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+}
+#Icone_develop {
+    font-size: 1.2rem;
+    color: #fff;
+}
+#icone_habilidade {
+    font-size: 1.8rem;
+    cursor: pointer;
+    width: 28.81px;
+    color: #fff;
+}
+.sessao_habilidades {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    justify-content: space-evenly;
+}
+/*Formulario*/
+.menu_formulario {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+.formulario_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.texto_formulario {
+    font-size: 1.2rem;
+} 
+input {
+    border: 1px solid;
+    height: 30px;
+    width: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.motivo {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+textarea {
+    border: 1px solid;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 100px;
+}
+.btn_form {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem; 
+}
+.btn_enviar {
+    background: rgb(4, 255, 0);
+    cursor: pointer;
+    width: 90px;
+}
