@@ -10,14 +10,19 @@
     <!--Extensões-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    
     
     <!--Css-->
     <link rel="stylesheet" href="./css/principal.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/revel.css">
     
     <!--Icone-->
     <link rel="icon" href="./Img/Icone.jpeg">
+
 </head>
 <body onload="loading()">
     <div class="load"> 
@@ -28,15 +33,13 @@
         <section class="contaienr_menu_principal" id="heard">
             <section class="Container_cor">
                 <header class="Menu_principal">
-                    
                     <!--Logo-->
-                    <h3 class="logo_menu">Arthur Ribeiro</h3>
-                    
+                    <a href="./Index.html" class="logo_menu">Arthur Ribeiro</a>
                     <!--Link Principal-->
                     <nav class="nav_links">
                         <ul class="lista_link">
                             <li class="li_link">
-                                <a href="./Index.html" class="link" style="color: blueviolet; border-bottom: 1px solid #fff;">Home</a>
+                                <a href="./Index.html" class="link">Home</a>
                             </li>
                             <li class="li_link" id="sobre">
                                 <a href="" id="sobre" class="link">Sobre Min</a>
@@ -52,7 +55,6 @@
                             </li>
                         </ul>
                     </nav>
-
                     <!--NavBar-->
                     <nav class="nav_bar">
                         <input type="checkbox" name="" id="check">
@@ -64,13 +66,7 @@
                                 <img src="./Img/Icone.jpeg" alt="Imagem Icone" class="nav_img">
                             </div>
                             <li class="bar_link">
-                                <a href="./Index.html" class="idiomas">Português</a>
-                            </li>
-                            <li class="bar_link">
-                                <a href="./Inglês.html" class="idiomas">Inglês</a>
-                            </li>
-                            <li class="bar_link">
-                                <a href="./Francês.html" class="idiomas">Francês</a>
+                                <a href="https://drive.google.com/file/d/1m0-t0sLB0j0FBg528Q3l5hSymOGWUhOh/view?usp=share_link" target="_blank" class="link">Curriculo</a>
                             </li>
                             <div class="nav_bar_links">
                                 <h3 class="logo_menu">Arthur Ribeiro</h3>
@@ -125,10 +121,9 @@
             </section>
         </section>
         <!--2 sessao-->
-        <!--Div sobre_min_logo vai ser a base -->
         <section class="container_sobremin" id="min"> 
             <!--APpresentação-->
-            <div class="sobre_min_logo">
+            <div class="sobre_min_logo" id="min-sobre">
                 <h2 class="texto_logo">Sobre Min</h2>
                 <div class="icone_logo">
                     <div class="estrela">
@@ -136,7 +131,6 @@
                         <div class="star"></div>
                         <div class="star"></div>
                     </div>
-
                 </div>
             </div>
             <!--img-->
@@ -163,7 +157,7 @@
         </section>
         <!--Hablidades-->
         <section class="container_habilidades" id="idades">
-            <section class="cor_habilidades">
+            <section class="cor_habilidades" id="idades-footer">
                 <div class="sobre_min_logo01">
                     <h2 class="texto_logo01">Habilidades</h2>
                     <div class="icone_logo">
@@ -214,10 +208,10 @@
                     </div>
                 </div>    
             </section>    
-        </section>
+        </section>               
         <!--Contato-->
         <section class="container_contato" id="contato">
-            <div class="sobre_min_logo">
+            <div class="sobre_min_logo" id="footer-contato">
                 <h2 class="texto_logo">Entre em Contato</h2>
                 <div class="icone_logo">
                     <div class="estrela">
@@ -255,11 +249,62 @@
                 </form>
             </div>
         </section>
+        <!--footer-->
         <section class="footer">
+            <section class="top_footer">
+                <div class="footer-esquerda">
+                    <h2>Arthur Ribeiro</h2>
+                    <div class="p_footer">
+                        <p>O maior problema em informatica não é o hardware ou o software, quase sempre está localizado entre a cadeira e o monitor</p>
+                    </div>
+                    <div class="navbar_redes">
+                        <a href="https://api.whatsapp.com/send?phone=5519988416960" target="_blank">
+                            <i style="color: #f5f5f594;" id="icone_navbar" class='bx bxl-whatsapp'></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/arthur-guilherme-ribeiro-8b3944235/" target="_blank">
+                            <i style="color: #f5f5f594;" id="icone_navbar" class='bx bxl-linkedin' ></i>
+                        </a>
+                        <a href="https://github.com/ArthurrGuilherme" target="_blank">
+                            <i style="color: #f5f5f594;" id="icone_navbar" class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://www.instagram.com/rei_arthur.png/" target="_blank">
+                            <i style="color: #f5f5f594;" id="icone_navbar" class='bx bxl-instagram' ></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-esquerda" id="footer-direita" style="text-align: center;">
+                    <h2>O que você procura ?</h2>
+                    <div class="p_footer">
+                        <nav class="nav_links">
+                            <ul class="lista_link" id="lista_footer">
+                                <li class="li_link">
+                                    <a href="./Index.html" class="link_footer">Home</a>
+                                </li>
+                                <li class="li_link" id="sobre">
+                                    <a class="link_footer" id="sobre-footer">Sobre Min</a>
+                                </li>
+                                <li class="li_link" id="habilidaes">
+                                    <a class="link_footer" id="habilidades-footer">Habilidades</a>
+                                </li>
+                                <li class="li_link">
+                                    <a class="link_footer" id="contato-footer">Contato</a>
+                                </li>
+                                <li class="li_link">
+                                    <a href="https://drive.google.com/file/d/1m0-t0sLB0j0FBg528Q3l5hSymOGWUhOh/view?usp=share_link" target="_blank" class="link_footer">Curriculo</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <div class="center-footer">
+                <div class="bordar-footer"></div>
+            </div>
             <footer>
                 <h3 class="final">© 2023 Arthur Ribeiro</h3>
             </footer>
         </section>
+        <!--Btn-->
         <section class="container04">
             <button class="scrolltop" onclick="backTop();">
                 <img class="seta" id="seta" src="https://cdn-icons-png.flaticon.com/512/37/37828.png">
@@ -268,4 +313,8 @@
     </div>    
 </body>
 <script src="./js/main.js"></script>
+<script src="./js/load.js"></script>
+<script src="./js/btn.js"></script>
+<script src="./js/revel.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 </html>
