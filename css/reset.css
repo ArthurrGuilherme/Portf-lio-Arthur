@@ -3,44 +3,23 @@
     padding: 0;
     border: 0;
     text-decoration: none;
+    list-style: none;
 }
-.contaienr_menu_principal {
-    background: url(https://i.pinimg.com/564x/77/29/49/772949e58512cea381629f10dbb0d1bc.jpg);
-    height: 630px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+/*Cor*/
+:root {
+    --color-primeira: #fff;
+    --color-segundaria: #000;
+    --color-terceira: rgb(137, 43, 226);
+    --color-quarta: #f5f5f594;
+}
+/*Font*/
+:root {
+    --Font-primeira: 1.5rem;
+    --font-segunda: 1.2rem;
 }
 .Container_cor {
     background: linear-gradient(140deg, black, transparent);
     height: 630px;
-}
-.container_sobremin {
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2.5rem;
-}
-.container_habilidades {
-    height: 220px;
-    gap: 2.5rem;
-    background: url(https://i.pinimg.com/564x/c2/8f/00/c28f00477f355aa2956ef935e71f3e0d.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.cor_habilidades {
-    background: linear-gradient(140deg, black, transparent);
-    height: 220px;
-}
-.container_contato {
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2.5rem;
 }
 .scrolltop {
     outline: none;
