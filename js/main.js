@@ -1,4 +1,7 @@
-/*Mapeamento*/ 
+function scrollTo(element) {
+    document.querySelector(element).scrollIntoView({ behavior: "smooth" });
+}
+
 document.querySelector("#sobre").addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -6,10 +9,6 @@ document.querySelector("#sobre").addEventListener("click", function (event) {
 
     console.log("go to up");
 });
-
-function scrollTo(element) {
-    document.querySelector(element).scrollIntoView({ behavior: "smooth" });
-}
 
 document.querySelector("#habilidaes").addEventListener("click", function (event) {
     event.preventDefault();
@@ -35,14 +34,28 @@ document.querySelector("#seta").addEventListener("click", function (event) {
     console.log("go to up");
 });
 
-/*Btn*/
-window.addEventListener('scroll', function () {
-    let scroll = document.querySelector('.scrolltop')
-        scroll.classList.toggle('active', window.scrollY > 200)
-})
+/*Footer*/
 
-/*Pre-loand*/
-function loading() {
-    document.getElementsByClassName('load')[0].style.display = "none";
-    document.getElementsByClassName('loandig')[0].style.display = "block";
-}
+document.querySelector("#sobre-footer").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    scrollTo("#min-sobre");
+
+    console.log("go to up");
+});
+
+document.querySelector("#habilidades-footer").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    scrollTo("#idades-footer");
+
+    console.log("go to up");
+});
+
+document.querySelector("#contato-footer").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    scrollTo("#footer-contato");
+
+    console.log("go to up");
+});
