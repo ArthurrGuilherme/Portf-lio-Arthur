@@ -1,0 +1,234 @@
+/*Headar*/
+.Menu_principal  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.lista_link {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+.logo_menu  {
+    font-size: var(--Font-primeira);
+    cursor: pointer;
+    color: var(--color-primeira);
+    transition: all .5s;
+}
+#btnmenu {
+    font-size: var(--Font-primeira);
+    color: var(--color-primeira);
+    cursor: pointer;
+    transition: all .5s;
+}
+#check {
+    display: none;
+}
+.links_bar {
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(9, 9, 9), rgb(28, 29, 28));
+    top: 0px;
+    left: -1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    gap: 0.8rem;
+    list-style: none;
+    z-index: 1;
+    box-shadow: 0px 0px 5px #fff, 0 0 15px #fff;
+}
+.idiomas {
+    text-decoration: none;
+    color: var(--color-primeira);
+    transition: all .5s;
+}
+.nav_bar_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    padding-top: 30px;
+}
+#icone_navbar {
+    font-size: var(--font-segunda);
+    color: var(--color-primeira);
+    transition: all 0.5s;
+}
+.nav_img {
+    width: 150px;
+    padding-bottom: 30px;
+}
+.link {
+    color: var(--color-primeira);
+    position: relative;
+    padding: 16px 0px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .5s;
+}
+.navbar_redes {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.nav_bar {
+    display: none;
+}
+
+/*Efeitos*/
+.logo_menu:hover  {
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+}
+.link:hover::before, 
+.link:focus::before {
+    transform-origin: left top;
+    transform:  scale(1, 1);
+}
+.link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--color-terceira);
+    transform-origin: right top;
+    transform:  scale(0, 1);
+    transition: color .1s, transform .2s ease-out;
+}
+.link:hover {
+    color: var(--color-terceira);
+}
+#btnmenu:hover {
+    color: var(--color-terceira);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+} 
+.idiomas:hover{
+    color: var(--color-terceira);
+}
+#check:checked ~ .links_bar {
+    left: 0;
+}
+#icone_navbar:hover{
+    color: var(--color-terceira);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/*Mobile*/
+@media (max-width: 900px) {
+    .nav_bar {
+        display: block;
+    }
+    .Container_cor {
+        height: 667px;
+        background: linear-gradient(86deg, black, transparent);
+    }
+    .Menu_principal {
+        height: 60px;
+        background: var(--color-segundaria);
+        right: 0px;
+        left: 0px;
+        z-index: 2;
+        position: fixed;
+    }
+    .nav_links {
+        display: none;
+    }
+    .logo_menu {
+        font-size: var(--font-segunda);
+    }
+    .nav_bar_links {
+        padding-top: 15px;
+    }
+    .nav_img {
+        width: 150px;
+        padding-bottom: 15px;
+    }
+    .links_bar {
+        width: 50%;
+        height: 100%;
+        background: #000;
+        left: -1000px;
+    }
+    #check:checked ~ .links_bar {
+        top: 0px;
+    }
+    .idiomas {
+        font-size: var(--font-segunda);
+    }
+}
+
+
+/*Footer*/
+.footer {
+    background: var(--color-segundaria);
+    color: var(--color-primeira);
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.top_footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+.p_footer {
+    width: 300px;
+    color: var(--color-quarta);
+}
+.link_footer {
+    color: var(--color-quarta);
+    cursor: pointer;
+    transition: all .5s;
+}
+#lista_footer {
+    gap: .5rem;
+    flex-direction: column;
+}
+.footer-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.final {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bordar-footer {
+    height: 1px;
+    background: var(--color-quarta);
+}
+.center-footer {
+    padding: 0px 10rem;
+}
+
+/*efeitos*/
+.link_footer:hover {
+    color: var(--color-terceira);
+}
+
+/*Mobile*/
+@media (max-width: 900px) {
+    .top_footer {
+        flex-direction: column;
+    }
+    #footer-direita {
+        display: none;
+    }
+    .center-footer {
+        padding: 0px 2rem;
+    }
+}
